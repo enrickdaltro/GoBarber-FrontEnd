@@ -1,10 +1,14 @@
 import React from 'react';
+import { Router } from 'react-dom';
+
+import Routes from './routes';
+import history from './services/history';
 
 function App() {
   return (
-    <div className="App">
-      <h1>HI</h1>
-    </div>
+    <Router history={history}>
+      <Routes />
+    </Router>
   );
 }
 
